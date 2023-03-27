@@ -17,7 +17,7 @@ jobs:
           paths: dockers
       - name: Build Apt Shellspec test Docker and Publish to GitHub Docker Registry
         if: steps.has-changed.outputs.changed == 'true'
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: docker.pkg.github.com/${{ github.repository }}/shellspec
           username: ${{ github.actor }}
@@ -37,7 +37,7 @@ jobs:
           paths: dockers
       - name: Build Apk Shellspec test Docker and Publish to GitHub Docker Registry
         if: steps.has-changed.outputs.changed == 'true'
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: docker.pkg.github.com/${{ github.repository }}/shellspec
           username: ${{ github.actor }}
@@ -57,7 +57,7 @@ jobs:
           paths: dockers
       - name: Build Yum Shellspec test Docker and Publish to GitHub Docker Registry
         if: steps.has-changed.outputs.changed == 'true'
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: docker.pkg.github.com/${{ github.repository }}/shellspec
           username: ${{ github.actor }}
@@ -77,7 +77,7 @@ jobs:
           paths: dockers
       - name: Build Pacman Shellspec test Docker and Publish to GitHub Docker Registry
         if: steps.has-changed.outputs.changed == 'true'
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: docker.pkg.github.com/${{ github.repository }}/shellspec
           username: ${{ github.actor }}
@@ -97,7 +97,7 @@ jobs:
           paths: dockers
       - name: Build DNF Shellspec test Docker and Publish to GitHub Docker Registry
         if: steps.has-changed.outputs.changed == 'true'
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: docker.pkg.github.com/${{ github.repository }}/shellspec
           username: ${{ github.actor }}
